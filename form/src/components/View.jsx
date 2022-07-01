@@ -1,10 +1,18 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+import {Link} from 'react-router-dom'
+
 
 function View() {
   return (
-    <div className='row'>
-        <Sidebar/>
+    <div>
+         <div className=" col-sm-3 p-10 sidebar">
+        <div className="row m-4 p-3 ">
+          <Link to='/add' style={{color: "white"}} className='text-decoration-none '>Add </Link>
+        </div>
+        <div className="row m-4 p-3">
+          <Link to='/view' className='text-decoration-none' style={{color: "white"}}>View</Link>
+        </div>
+      </div>
         <div className='col'>
         <div className="col-md-8 order-md-1">
           <h4 className="mb-3">Billing address</h4>

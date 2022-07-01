@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {DropdownMenu, DropdownItem, ButtonDropdown, DropdownToggle } from 'reactstrap'
+import {Input, FormGroup, Form } from 'reactstrap'
 
 
 function DropdownComp() {
@@ -11,24 +11,18 @@ function DropdownComp() {
   // }
 
   return (
-    <div className=' ' >
-      <ButtonDropdown className=" form-control " toggle={() => {setOpen(!open)}} isOpen={open} >
-        <DropdownToggle className='bg-primary' variant='primary' caret>
-          Asset Type
-        </DropdownToggle>
-        <DropdownMenu className="">
-          <DropdownItem>Action</DropdownItem>
-          <DropdownItem divider/>
-          <DropdownItem>Another action</DropdownItem>
-          <DropdownItem divider/>
-          <DropdownItem>Something else here</DropdownItem>
-          <DropdownItem divider/>
-          <DropdownItem>Another one</DropdownItem>
-          <DropdownItem divider/>
-          <DropdownItem>Separated link</DropdownItem>
-        </DropdownMenu>
-      </ButtonDropdown>
-  </div>
+    <Form className=' mb-2 p-6' >
+     <FormGroup>
+          <p for="exampleSelect" className='text-center'>Requirements</p>
+          <Input type="select" name="select" id="exampleSelect" className='form-control'>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Input>
+        </FormGroup>
+  </Form>
   )
 }
 

@@ -4,11 +4,12 @@
 }
 .sidebar
 {
-  width: fit-content;
+  width: 300px;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
   color: white;
-  background-color: gray;
-  
+  background-color: gray; 
 }
 
 .form-content
